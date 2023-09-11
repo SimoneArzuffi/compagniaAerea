@@ -79,7 +79,7 @@ public class Test {
     public void testNuovaPrenotazione() {
         Cliente cliente = new Cliente("John", "Doe", "USA", "New York", "1990-01-15", "FL001");
         Volo volo = new Volo("FL001", "JFK", "LAX", "2023-09-15", "08:00", "13:00", 150, 300);
-        compagniaAerea.clienti.put(cliente.codiceCliente cliente);
+        compagniaAerea.clienti.put(cliente.codiceCliente, cliente);
         compagniaAerea.voli.put(volo.codiceVolo, volo);
 
         compagniaAerea.nuovaPrenotazione("FL001", "FL001", 2, 20);
